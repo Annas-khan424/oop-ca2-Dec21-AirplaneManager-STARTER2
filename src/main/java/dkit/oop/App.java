@@ -1,6 +1,5 @@
 package dkit.oop;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -66,23 +65,23 @@ public class App
 
         // Testing addPassengerNameToAirplane method:
         System.out.println("\nTesting addPassengerNameToAirplane(): \n");
-        boolean addedPassenger = mgr.addPassengerNameToAirplane(103, "Tom Holland");
+        boolean addedPassenger = mgr.addPassengerNameToAirplane(107, "Tom Holland");
         System.out.println(addedPassenger);
         System.out.println("Printing all passenger airplanes to verify if new passenger has been added: \n");
         mgr.displayAllPassengerAirplanes();
 
         // Testing containsAirplane method:
         boolean containsPassengerPlane1 = mgr.containsAirplane(passengerPlane1);
-        boolean containsNewPlane = mgr.containsAirplane(new CargoAirplane("Boeing C-7000",25000));
+        boolean containsNewPlane = mgr.containsAirplane(new CargoAirplane("Douglas DC-4",20000));
 
         System.out.println("\nContains passengerPlane1 : " + containsPassengerPlane1);
-        System.out.println("Contains new plane with same values (except id) as cargoPlane2 : " + containsNewPlane);
+        System.out.println("Contains new plane with same values (except id) as cargoPlane1 : " + containsNewPlane);
 
         // Testing findAirplaneByPassengerName method:
-        Airplane findPlaneWithTomHardy = mgr.findAirplaneByPassengerName("Tom Hardy");
-        System.out.println("\nPlane that has Tom Hardy as a passenger: " + findPlaneWithTomHardy);
-        Airplane findPlaneWithKeanuReeves = mgr.findAirplaneByPassengerName("Keanu Reeves");
-        System.out.println("Plane that has Keanu Reeves as a passenger: " + findPlaneWithKeanuReeves);
+        Airplane findPlaneWithMargorRobbie = mgr.findAirplaneByPassengerName("Margot Robbie");
+        System.out.println("\nPlane that has Margot Robbie as a passenger: " + findPlaneWithMargorRobbie);
+        Airplane findPlaneWithAnnasKhan = mgr.findAirplaneByPassengerName("Annas Khan");
+        System.out.println("Plane that has Keanu Reeves as a passenger: " + findPlaneWithAnnasKhan);
 
 
         //Question 4

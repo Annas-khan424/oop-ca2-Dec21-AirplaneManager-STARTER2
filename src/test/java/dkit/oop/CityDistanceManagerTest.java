@@ -1,27 +1,26 @@
 package dkit.oop;
-import org.junit.BeforeClass;
 import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CityDistanceManagerTest {
 
-    private CityDistanceManager cdm;
+    private CityDistanceManager CityDistanceManager;
 
     @BeforeEach
     public void setup()
     {
-        cdm = new CityDistanceManager();
+        CityDistanceManager = new CityDistanceManager();
     }
 
     @org.junit.jupiter.api.Test
-    void testFindDistanceBetween_DublinAndBelfast()
+    void testFindDistanceBetween_DublinAndcork()
     {
         String city1 = "Dublin";
-        String city2 = "Belfast";
+        String city2 = "cork";
 
-        int expectedDistance = 167;
-        int actualDistance = cdm.findDistanceBetween(city1,city2);
+        int expectedDistance = 257;
+        int actualDistance = CityDistanceManager.findDistanceBetween(city1,city2);
 
         assertEquals(expectedDistance,actualDistance);
     }
@@ -33,7 +32,7 @@ class CityDistanceManagerTest {
         String city2 = "Galway";
 
         int expectedDistance = 105;
-        int actualDistance = cdm.findDistanceBetween(city1,city2);
+        int actualDistance = CityDistanceManager.findDistanceBetween(city1,city2);
 
         assertEquals(expectedDistance,actualDistance);
     }
