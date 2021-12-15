@@ -17,14 +17,50 @@ public class CityDistanceManager {
 
     // Q4.1
     public int findDistanceBetween(String city1, String city2) {
-        // write code here
-        return 0;
+        int city1Index = -1, city2Index = -1;
+
+        for(int i = 0; i < cities.length; i++)
+        {
+            if(cities[i].equalsIgnoreCase(city1))
+            {
+                city1Index = i;
+            }
+            else if(cities[i].equalsIgnoreCase(city2))
+            {
+                city2Index = i;
+            }
+        }
+
+        return distances[city1Index][city2Index];
+
     }
 
     // Q4.2
     public String findClosestCityTo(String searchCity) {
-        // write code here
-        return "unknown";
+        int cityIndex = -1;
+
+        for(int i = 0; i < cities.length; i++)
+        {
+            if(cities[i].equalsIgnoreCase(searchCity))
+            {
+                cityIndex = i;
+            }
+        }
+
+        int[] searchArray = distances[cityIndex];
+        int closestCityIndex = -1;
+        int min = Integer.MAX_VALUE;
+
+        for(int j = 0; j < searchArray.length; j++)
+        {
+            if(searchArray[j] < min && searchArray[j] != 0)
+            {
+                min = searchArray[j];
+                closestCityIndex = j;
+            }
+        }
+
+        return cities[closestCityIndex];
     }
 
     /////////////// no changes required below this comment ///////////////
