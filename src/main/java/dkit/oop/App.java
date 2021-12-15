@@ -78,10 +78,10 @@ public class App
         System.out.println("Contains new plane with same values (except id) as cargoPlane1 : " + containsNewPlane);
 
         // Testing findAirplaneByPassengerName method:
-        Airplane findPlaneWithMargorRobbie = mgr.findAirplaneByPassengerName("Margot Robbie");
-        System.out.println("\nPlane that has Margot Robbie as a passenger: " + findPlaneWithMargorRobbie);
-        Airplane findPlaneWithAnnasKhan = mgr.findAirplaneByPassengerName("Annas Khan");
-        System.out.println("Plane that has Keanu Reeves as a passenger: " + findPlaneWithAnnasKhan);
+        Airplane findPlaneWithMargorRobbies = mgr.findAirplaneByPassengerName("Margot Robbie");
+        System.out.println("\nPlane that has Margot Robbie as a passenger: " + findPlaneWithMargorRobbies);
+        Airplane findPlaneWithAnnasKhans = mgr.findAirplaneByPassengerName("Annas Khan");
+        System.out.println("Plane that has Keanu Reeves as a passenger: " + findPlaneWithAnnasKhans);
 
 
         //Question 4

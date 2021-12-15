@@ -114,7 +114,7 @@ public class AirplaneManager {
         return null;
     }
 
-    // write displayAllAirplanesInOrderOfType( argument )
+
 
 
 } // end of AirplaneManager
