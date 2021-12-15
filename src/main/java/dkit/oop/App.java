@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 /**
  * OOP CA2 December 2021 - Airplane Management System  STARTER CODE
+ * Annas Mohammed Khan
+ * SD2a
  */
 public class App 
 {
@@ -17,11 +19,13 @@ public class App
 
         System.out.println("OOP - CA2 - 20% - December 2021 - AirplaneManager");
 
-        //Q2
-        // CargoAirplane cargoPlane1 = new CargoAirplane("Douglas DC-4",20000);
-        // CargoAirplane cargoPlane2 = new CargoAirplane("Boeing C-7000",25000);
+//        Q2
+         CargoAirplane cargoPlane1 = new CargoAirplane("Douglas DC-4",20000);
+         CargoAirplane cargoPlane2 = new CargoAirplane("Boeing C-7000",25000);
 
         // display the two objects
+        System.out.println("type:"+cargoPlane1.getType()+"\tMaxLoad:"+cargoPlane1.getMAX_LOAD_KILOS());
+        System.out.println("type:"+cargoPlane2.getType()+"\tMaxLoad:"+cargoPlane2.getMAX_LOAD_KILOS());
 
         AirplaneManager mgr = new AirplaneManager();
 
